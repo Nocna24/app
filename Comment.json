@@ -1,0 +1,22 @@
+{
+  "name": "Comment",
+  "type": "object",
+  "properties": {
+    "post_id": {
+      "type": "string",
+      "description": "ID posta do którego należy komentarz"
+    },
+    "content": {
+      "type": "string",
+      "description": "Treść komentarza"
+    },
+    "parent_comment_id": {
+      "type": "string",
+      "description": "ID komentarza nadrzędnego (dla odpowiedzi)"
+    }
+  },
+  "required": [
+    "post_id",
+    "content"
+  ]
+}
