@@ -1,0 +1,39 @@
+{
+  "name": "Post",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Tytuł posta"
+    },
+    "content": {
+      "type": "string",
+      "description": "Treść posta"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "ogólne",
+        "techniczne",
+        "pomoc",
+        "offtopic"
+      ],
+      "default": "ogólne",
+      "description": "Kategoria posta"
+    },
+    "is_pinned": {
+      "type": "boolean",
+      "default": false,
+      "description": "Czy post jest przypięty"
+    },
+    "views": {
+      "type": "number",
+      "default": 0,
+      "description": "Liczba wyświetleń"
+    }
+  },
+  "required": [
+    "title",
+    "content"
+  ]
+}
