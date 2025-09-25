@@ -1,0 +1,38 @@
+{
+  "name": "News",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Tytuł newsa"
+    },
+    "content": {
+      "type": "string",
+      "description": "Treść newsa"
+    },
+    "summary": {
+      "type": "string",
+      "description": "Krótkie podsumowanie"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "URL zdjęcia dla newsa"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Czy news jest wyróżniony"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tagi newsa"
+    }
+  },
+  "required": [
+    "title",
+    "content"
+  ]
+}
